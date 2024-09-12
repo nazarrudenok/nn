@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('/styles/e-UkraineHead-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a3b39f;
+    color: #ffffff;
+    font-family: "e-Ukraine", sans-serif;
+}
+
+.text {
+    font-size: 27.5px;
+}
+
+.days {
+    font-size: 35px;
+}
