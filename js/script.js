@@ -4,12 +4,13 @@ function calculateTimeDifference() {
 
     let diffInMilliseconds = now - startDate;
 
+    const seconds = Math.floor(diffInMilliseconds / 1000);
     const minutes = Math.floor(diffInMilliseconds / (1000 * 60));
     const days = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24));
     const months = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 30.44));
     const years = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365.25));
 
-    document.querySelector('.days').innerText = `${years}\n${months}\n${days}\n${minutes}`;
+    document.querySelector('.days').innerText = `${years}.\n${months}.\n${days}.\n${minutes}.\n${seconds}.`;
 }
 
 calculateTimeDifference();
